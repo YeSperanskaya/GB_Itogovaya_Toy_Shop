@@ -11,6 +11,10 @@ public class ToysQueue {
 
     public ToysQueue(Toy toy1, Toy toy2, Toy toy3) {
         queue = new PriorityQueue((t1, t2) -> Double.compare(toy1.getWeigth(), toy2.getWeigth()));
+        queue.add(toy1);
+
+        queue.add(toy2);
+        queue.add(toy3);
 
 //        String[] toys = toy1.split(" ");
 //        queue.add(new Toy(Integer.parseInt(toys[0]), toys[1], Double.parseDouble(toys[2])));
@@ -55,5 +59,14 @@ public class ToysQueue {
         }
     }
 
+    @Override
+    public String toString() {
+        return "ToysQueue{" +
+                "queue=" + queue +
+                '}';
+    }
 
+    public PriorityQueue<Toy> getQueue() {
+        return queue;
+    }
 }

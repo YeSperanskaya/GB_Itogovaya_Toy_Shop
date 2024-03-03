@@ -46,5 +46,6 @@ public class Main {
         toysQueue.addToQueue(new Toy(5, "мячик", 1.5));
 
         toysQueue.getAndWriteToFile(10, "output.txt");
+        System.out.println(toysQueue.getQueue());
     }
 }
