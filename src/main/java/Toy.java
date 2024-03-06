@@ -21,6 +21,7 @@ public class Toy {
         return name;
     }
 
+
     public int getFrequency() {
         return frequency;
     }

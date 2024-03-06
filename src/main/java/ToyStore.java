@@ -10,7 +10,6 @@ public class ToyStore {
     PriorityQueue<Toy> toysQueue = new PriorityQueue<>((t1, t2) -> t2.getFrequency() - t1.getFrequency());
     public ToyStore() {
     }
-
     /**
      * Метод для добавления игрушки в очередь
       */

@@ -12,6 +12,7 @@ public class Controller {
         toyStore.addToy(toyStore.toysQueue, "2 2 котенок");
         toyStore.addToy(toyStore.toysQueue, "3 6 кукольный набор");
 
+
         // Вызываем метод Get 10 раз и записываем результат в файл
         try {
             FileWriter writer = new FileWriter("output.txt");
