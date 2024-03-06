@@ -2,7 +2,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.PriorityQueue;
 
-class Toy {
+public class Toy {
     int id;
     String name;
     int frequency;
